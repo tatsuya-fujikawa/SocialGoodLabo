@@ -1,3 +1,15 @@
 .c-button {
-    color: #333333;
+    display: inline-block;
+    padding: rem(10) rem(66) rem(12);
+    font-size: rem(22);
+    font-weight: 500;
+    font-family: 'IBM Plex Sans', sans-serif;
+    border: 2px solid var(--color-font);
+    transition: 0.2s ease;
+
+    &:hover {
+        background-color: var(--color-font);
+        color: var(--color-white);
+        transition: 0.2s ease;
+    }
 }

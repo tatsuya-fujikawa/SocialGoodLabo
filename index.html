@@ -4,18 +4,72 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+  <script src="assets/js/particle.js" defer></script>
+  <link rel="stylesheet" href="./assets/css/style.css">
   <title>SG lab</title>
 </head>
 <body>
   <header class="l-header">
 
+
   </header>
   <main>
+    <section class="l-ranking l-spacer p-ranking">
+      <div class="l-container">
+        <div class="c-heading">
+          <h2 class="c-heading__title">よく読まれている記事</h2>
+          <span class="c-heading__en u-uppercase u-enfont" lang="en">ranking</span>
+        </div><!-- /.c-heading -->
+        <div class="u-centerposition">
+          <a href="#" class="c-button" lang="en">View more</a>
+        </div><!-- /.u-centerposition -->
+      </div><!-- /.l-container -->
+    </section>
+    <section class="l-timeline p-timeline">
+        <div class="l-container">
+          <div class="p-timeline__inner">
+            <div class="p-timeline__left">
+              <img src="https://placehold.jp/440x440.png" alt="">
+            </div><!-- /.p-timeline__left -->
+            <div class="p-timeline__right">
+                <h3 class="p-timeline__text">最新情報をチェック</h3>
+                <a href="#aaa" target="_blank" class="p-timeline__button">＠sglaboをフォロー</a>
+            </div><!-- /.p-timeline__right -->
+          </div><!-- /.p-timeline__inner -->
+        </div><!-- /.l-container -->
+        <canvas class="p-timeline__background"></canvas>
+    </section><!-- /.l-timeline -->
+    <section class="l-sns p-sns">
+      <h2 class="p-sns__title u-uppercase u-enfont u-centerposition" lang="en">connect to sns</h2>
+      <ul class="p-sns__icons"> 
+        <li class="p-sns__icons-icon"><a href="#" target="_blank"><img src="/assets/img/twitter.svg" alt="" width="40px"></a></li>
+        <li class="p-sns__icons-icon"><a href="#" target="_blank"><img src="/assets/img/facebook.svg" alt="" width="38px"></a></li>
+        <li class="p-sns__icons-icon -note"><a href="#" target="_blank"><img src="/assets/img/note.svg" alt="" width="28px"></a></li>
+      </ul><!-- /.p-sns__icons -->
+    </section><!-- /.l-sns -->
 
   </main>
-  <footer class="l-footer">
-
+  <footer class="l-footer p-footer">
+    <div class="l-container__wide">
+      <ul class="p-footer__list">
+        <li class="p-footer__list-item"><a href="#" class="u-uppercase">top</a></li>
+        <li class="p-footer__list-item"><a href="#">SocialGoodラボとは？</a></li>
+        <li class="p-footer__list-item"><a class="c-blankLink" href="#" target="_blank" rel="noopener">運営会社</a></li>
+        <li class="p-footer__list-item"><a class="c-blankLink" href="#" target="_blank" rel="noopener">プライバシーポリシー</a></li>
+        <li class="p-footer__list-item"><a class="c-blankLink" href="#" target="_blank" rel="noopener">利用規約</a></li>
+        <li class="p-footer__list-item"><a class="c-blankLink" href="#" target="_blank" rel="noopener">お問い合わせ</a></li>
+      </ul><!-- /.p-footer__list -->
+      <div class="p-footer__copyright">
+        <p class="u-centerposition" lang="en">&copy; SG Lab</p>
+      </div><!-- /.p-footer__copyright -->
+    </div><!-- /.l-container__wide -->
   </footer>
 </body>
 </html>
