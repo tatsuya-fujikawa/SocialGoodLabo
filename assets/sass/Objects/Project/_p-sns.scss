@@ -1,0 +1,27 @@
+.p-sns {
+  &__title {
+    font-size: rem(28);
+    font-weight: bold;
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: center;
+    padding-top: rem(34);
+
+    &-icon {
+      padding-right: rem(34);
+
+      &:last-child {
+        padding-right: 0;
+      }
+
+      &.-note {
+        position: relative;
+        top: 3px;
+      }
+    }
+  }
+
+
+}

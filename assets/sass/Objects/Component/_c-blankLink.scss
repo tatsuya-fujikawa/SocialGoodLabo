@@ -1,0 +1,16 @@
+.c-blankLink {
+  &[target*="_blank"] {
+    position: relative;
+  }
+  &[target*="_blank"]:after {
+    content: '';
+    background-size: 100%;
+    display: inline-block;
+    position: relative;
+    width: 13px;
+    height: 13px;
+    background-image: url(/assets/img/newtab.svg);
+    margin-left: 5px;
+    top: 0;
+  }
+}

@@ -1,0 +1,30 @@
+.p-footer {
+  &__list {
+    display: flex;
+    justify-content: center;
+
+    &-item {
+      padding-right: rem(36);
+      font-size: rem(14);
+
+      &:last-child {
+        padding-right: 0;
+      }
+
+      a {
+        position: relative;
+        display: inline-block;
+        
+        &:hover {
+          text-decoration: underline;
+          text-underline-offset: 0.5em;
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+
+  &__copyright {
+    padding-top: rem(40);
+  }
+}
