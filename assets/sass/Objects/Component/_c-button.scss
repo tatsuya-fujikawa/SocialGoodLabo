@@ -1,15 +1,46 @@
 .c-button {
-    display: inline-block;
+    display: block;
     padding: rem(10) rem(66) rem(12);
     font-size: rem(22);
     font-weight: 500;
     font-family: 'IBM Plex Sans', sans-serif;
     border: 2px solid var(--color-font);
     transition: 0.2s ease;
+    position: relative;
 
     &:hover {
         background-color: var(--color-font);
         color: var(--color-white);
         transition: 0.2s ease;
+
+        &:before {
+            background-color: #acacac;
+            width: 30px;
+            right: -2px;
+        }
+        &:after {
+        background-color: #333333;
+        }
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        width: 30px;
+        height: 1px;
+        top: 50%;
+        right: 0;
+        transition: 0.4s ease;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        width: 40px;
+        height: 1px;
+        top: 50%;
+        right: -42px;
+        transition: 0.4s ease;
     }
 }

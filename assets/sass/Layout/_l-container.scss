@@ -7,13 +7,10 @@
     @include mq('tab') {
         width: 95%;
     }
-
     @include mq('sp') {
         width: 95%;
     }
-
 }
-
 .l-container__narrow {
     margin: 0 auto;
     max-width: 960px;

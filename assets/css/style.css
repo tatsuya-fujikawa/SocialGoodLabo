@@ -329,6 +329,7 @@ svg:not([fill]) {
 html, body {
   padding: 0;
   margin: 0;
+  counter-reset: ranking;
 }
 
 * {
@@ -447,20 +448,183 @@ img {
 }
 
 .c-button {
-  display: inline-block;
+  display: block;
   padding: 0.625rem 4.125rem 0.75rem;
   font-size: 1.375rem;
   font-weight: 500;
   font-family: "IBM Plex Sans", sans-serif;
   border: 2px solid var(--color-font);
   transition: 0.2s ease;
+  position: relative;
 }
 .c-button:hover {
   background-color: var(--color-font);
   color: var(--color-white);
   transition: 0.2s ease;
 }
+.c-button:hover:before {
+  background-color: #acacac;
+  width: 30px;
+  right: -2px;
+}
+.c-button:hover:after {
+  background-color: #333333;
+}
+.c-button:before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 30px;
+  height: 1px;
+  top: 50%;
+  right: 0;
+  transition: 0.4s ease;
+}
+.c-button:after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 1px;
+  top: 50%;
+  right: -42px;
+  transition: 0.4s ease;
+}
 
+.c-card {
+  width: 360px;
+  position: relative;
+  counter-increment: ranking;
+}
+.c-card:first-of-type:before {
+  position: absolute;
+  content: "";
+  z-index: 10;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 93px 93px 0 0;
+  border-color: #D5C128 transparent transparent transparent;
+}
+.c-card:nth-of-type(2):before {
+  position: absolute;
+  content: "";
+  z-index: 10;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 93px 93px 0 0;
+  border-color: #2E6DA5 transparent transparent transparent;
+}
+.c-card:nth-of-type(3):before {
+  position: absolute;
+  content: "";
+  z-index: 10;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 93px 93px 0 0;
+  border-color: #BA583B transparent transparent transparent;
+}
+.c-card:nth-of-type(n+4):before {
+  position: absolute;
+  content: "";
+  z-index: 10;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 93px 93px 0 0;
+  border-color: #707070 transparent transparent transparent;
+}
+.c-card:after {
+  position: absolute;
+  content: counter(ranking);
+  z-index: 15;
+  top: 10px;
+  left: 18px;
+  font-size: 1.5rem;
+  color: var(--color-white);
+  font-family: "IBM Plex Sans", sans-serif;
+}
+.c-card__thumbs {
+  display: block;
+  transition: 0.2s ease;
+  overflow: hidden;
+  position: relative;
+}
+.c-card__thumbs-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  transition: 0.2s ease;
+}
+.c-card__thumbs-img:hover {
+  transform: scale(1.1) rotate(1deg);
+  transition: 0.2s ease;
+  filter: blur(1px);
+}
+.c-card__title {
+  font-size: 1rem;
+  line-height: 28px;
+  padding-top: 15px;
+}
+.c-card__title:hover {
+  opacity: 0.8;
+}
+.c-card__category {
+  font-size: 0.875rem;
+  padding-top: 0.875rem;
+  font-weight: 700;
+}
+.c-card__category a {
+  font-weight: 700;
+  display: inline-block;
+  padding: 3px 15px;
+  background: linear-gradient(98deg, #ebb9f5 0%, #6acde7 100%);
+  transition: 0.2s ease;
+}
+.c-card__category a:hover {
+  background: linear-gradient(22deg, #ebb9f5 0%, #6acde7 100%);
+  transition: 0.2s ease;
+  opacity: 0.8;
+}
+.c-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 1em;
+}
+.c-card__tags-tag {
+  font-size: 0.875rem;
+  font-weight: bold;
+  padding-right: 15px;
+  position: relative;
+}
+.c-card__tags-tag:before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  background-image: url(/assets/img/tag.svg);
+  background-size: 95%;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: 2px;
+}
+.c-card__tags-tag:hover {
+  opacity: 0.8;
+}
+.c-card__date {
+  text-align: right;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.c-heading {
+  padding-bottom: 3.75rem;
+}
 .c-heading__title {
   font-size: 1.4375rem;
   font-weight: bold;
@@ -482,6 +646,9 @@ img {
 }
 .p-sns__icons-icon {
   padding-right: 2.125rem;
+}
+.p-sns__icons-icon:hover {
+  opacity: 0.7;
 }
 .p-sns__icons-icon:last-child {
   padding-right: 0;
