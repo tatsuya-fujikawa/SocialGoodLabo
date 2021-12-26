@@ -1,0 +1,11 @@
+.l-trendtag {
+    background-color: var(--color-font);
+    padding: rem(20) 0;
+    width: 100%;
+    min-height: 190px;
+    overflow: hidden;
+    z-index: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+}

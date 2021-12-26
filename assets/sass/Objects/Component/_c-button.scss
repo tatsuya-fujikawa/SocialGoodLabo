@@ -1,5 +1,5 @@
 .c-button {
-    display: block;
+    display: inline-block;
     padding: rem(10) rem(66) rem(12);
     font-size: rem(22);
     font-weight: 500;
@@ -20,6 +20,27 @@
         }
         &:after {
         background-color: #333333;
+        }
+    }
+
+    &.-mv {
+        background-color: var(--color-white);
+        box-sizing: border-box;
+
+        &:hover {
+            background-color: #000000;
+            color: var(--color-white);
+            transition: 0.2s ease;
+            border: 1px solid #ffffff;
+    
+            &:before {
+                background-color: #acacac;
+                width: 30px;
+                right: -2px;
+            }
+            &:after {
+            background-color: #acacac;
+            }
         }
     }
 

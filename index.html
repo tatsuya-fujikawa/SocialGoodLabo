@@ -10,25 +10,188 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
-  <script src="assets/js/particle.js" defer></script>
-  <link rel="stylesheet" href="./assets/css/style.css">
+<link rel="stylesheet" href="./assets/css/style.css">
+<link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+  <script src="/assets/js/particles.js"></script>
+  <script src="/assets/js/particles2.js"></script>
+  <script src="/assets/js/particles3.js"></script>
+  <script src="/assets/js/particle_mv.js" defer></script>
+  <script src="/assets/js/particle_timeline.js" defer></script>
+  <script src="/assets/js/particle_trendtag.js" defer></script>
+  <script src="/assets/js/swiper-bundle.min.js" defer></script>
+  <script src="/assets/js/swiper.js" defer></script>
   <title>SG lab</title>
 </head>
 <body>
-  <header class="l-header">
-
-
+  <header class="l-header p-header">
+    <div class="l-container__wide">
+      <div class="p-header__icons">
+        <ul class="p-header__icons-sns">
+          <li><a href="#" target="_blank"><img src="/assets/img/twitter.svg" alt="" width="32px"></a></li>
+          <li><a href="#" target="_blank"><img src="/assets/img/facebook.svg" alt="" width="30px"></a></li>
+          <li class="note"><a href="#" target="_blank"><img src="/assets/img/note.svg" alt="" width="22px"></a></li>
+          <li>
+            <ul class="p-header__icons-search">
+              <li><a href="#"><img src="/assets/img/search.svg" alt="" width="27px"></a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /p-header__icons -->
+      <div class="p-header__lower">
+        <div class="p-header__logo">
+          <h1 class="u-visually-hidden">SG lab</h1>
+          <img src="/assets/img/logo.svg" alt="SG lab">
+        </div><!-- /p-header__logo -->
+        <div class="p-header__right">
+          <ul class="p-header__categoryList">
+            <li class="p-header__categoryList-link"><a href="#">SGハウツー</a></li>
+            <li class="p-header__categoryList-link"><a href="#">進行中プロジェクト</a></li>
+          </ul>
+        </div>
+      </div><!-- /p-header__lower -->
+    </div><!-- /l-container__wide -->
   </header>
+
   <main>
-    <section class="l-ranking l-spacer p-ranking">
+    <section class="l-mv p-mv">
+      <div class="l-container">
+        <div class="p-mv__inner">
+          <div class="p-mv__left">
+            <h2 class="p-mv__title">ステートメント<br>テキストが入ります</h2>
+            <p class="p-mv__text">何のメディアか？を伝達<br>
+              テキストが入ります。<br>
+              テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+            <div class="p-mv__button">
+              <a href="#" class="c-button -mv" lang="en">View more</a>
+            </div><!-- /p-mv__button -->
+          </div><!-- /p-mv__left -->
+          <div class="p-mv__right">
+            <div class="p-mv__movie">
+              <img src="https://placehold.jp/650x365.png" alt="">
+            </div><!-- /p-mv__movie -->
+          </div><!-- /p-mv__right -->
+        </div><!-- /p-mv__inner -->
+      </div><!-- /l-container -->
+      <canvas class="p-mv__background"></canvas>
+    </section>
+    <!-- /l-mv -->
+
+    <section class="l-pickup p-pickup">
+      <div class="l-spacer">
+        <div class="l-container">
+          <div class="c-heading u-white">
+            <h2 class="c-heading__title">ピックアップ</h2>
+            <span class="c-heading__en u-uppercase u-enfont" lang="en">PICK UP</span>
+          </div><!-- /.c-heading -->
+        </div><!-- /l-container -->
+
+        <div class="swiper__parent">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div id="slide02" class="swiper slide02">
+            <ul class="swiper-wrapper">
+
+              <li class="swiper-slide">
+                <a href="#" class="c-article">
+                  <div class="c-article__inner">
+                    <div class="c-article__thumbs">
+                      <img src="/assets/img/pickup_01.png" alt="">
+                    </div><!-- /c-article__thumbs -->
+                    <div class="c-article__lead">
+                      <h3 class="c-article__title">記事のタイトルが入ります。記事のタイトルが入ります。記事のタイトルが入ります。</h3>
+                      <p class="c-article__category">進行中プロジェクト</p>
+                      <ul class="c-article__tag">
+                        <li class="c-article__tag-list">＃医療系</li>
+                        <li class="c-article__tag-list">＃担当者向け</li>
+                      </ul><!-- /c-article__tag -->
+                      <p class="c-article__date">2021.12.01</p>
+                    </div><!-- /c-article__lead -->
+                  </div><!-- /c-article__inner -->
+                </a><!-- /c-articles -->
+              </li><!-- /swiper-slide -->
+
+              <li class="swiper-slide">
+                <a href="#" class="c-article">
+                  <div class="c-article__inner">
+                    <div class="c-article__thumbs">
+                      <img src="/assets/img/pickup_02.png" alt="">
+                    </div><!-- /c-article__thumbs -->
+                    <div class="c-article__lead">
+                      <h3 class="c-article__title">記事のタイトルが入ります。記事のタイトルが入ります。記事のタイトルが入ります。</h3>
+                      <p class="c-article__category">進行中プロジェクト</p>
+                      <ul class="c-article__tag">
+                        <li class="c-article__tag-list">＃医療系</li>
+                        <li class="c-article__tag-list">＃担当者向け</li>
+                      </ul><!-- /c-article__tag -->
+                      <p class="c-article__date">2021.12.01</p>
+                    </div><!-- /c-article__lead -->
+                  </div><!-- /c-article__inner -->
+                </a><!-- /c-articles -->
+              </li><!-- /swiper-slide -->
+
+              <li class="swiper-slide">
+                <a href="#" class="c-article">
+                  <div class="c-article__inner">
+                    <div class="c-article__thumbs">
+                      <img src="/assets/img/pickup_03.png" alt="">
+                    </div><!-- /c-article__thumbs -->
+                    <div class="c-article__lead">
+                      <h3 class="c-article__title">記事のタイトルが入ります。記事のタイトルが入ります。記事のタイトルが入ります。</h3>
+                      <p class="c-article__category">進行中プロジェクト</p>
+                      <ul class="c-article__tag">
+                        <li class="c-article__tag-list">＃医療系</li>
+                        <li class="c-article__tag-list">＃担当者向け</li>
+                      </ul><!-- /c-article__tag -->
+                      <p class="c-article__date">2021.12.01</p>
+                    </div><!-- /c-article__lead -->
+                  </div><!-- /c-article__inner -->
+                </a><!-- /c-articles -->
+              </li><!-- /swiper-slide -->
+
+            </ul><!-- /swiper-wrapper -->
+
+          </div><!-- /swiper -->
+
+        </div><!-- /swiper__parent -->
+
+
+      </div><!-- /l-spacer -->
+      
+    </section>
+    <!-- /l-pickup -->
+
+    <section class="l-trendtag p-trendtag">
+      <div class="l-container">
+        <div class="p-trendtag__center">
+          <div class="c-heading u-white p-trendtag__heading">
+            <h2 class="c-heading__title">トレンドタグ</h2>
+            <span class="c-heading__en u-uppercase u-enfont" lang="en">TREND TAGS</span>
+          </div><!-- /.c-heading -->
+          <div id="slide01" class="p-trendtag__slider swiper slide01">
+            <ul class="p-trendtag__list swiper-wrapper">
+              <li class="p-trendtag__list-item swiper-slide"><a href="#">#担当者向け</a></li>
+              <li class="p-trendtag__list-item swiper-slide"><a href="#">#神戸市</a></li>
+              <li class="p-trendtag__list-item swiper-slide"><a href="#">#仙台市</a></li>
+              <li class="p-trendtag__list-item swiper-slide"><a href="#">#DSP</a></li>
+              <li class="p-trendtag__list-item swiper-slide"><a href="#">#知財</a></li>
+              <li class="p-trendtag__list-item swiper-slide"><a href="#">#あるある</a></li>
+              <li class="p-trendtag__list-item swiper-slide"><a href="#">#社内政治</a></li>
+            </ul>
+          </div><!-- /p-trendtag__slider -->
+          <div class="swiper-button-next"></div><!-- /swiper-button-next -->
+        </div><!-- /p-trendtag__center -->
+      </div><!-- /l-container -->
+      <canvas class="p-trendtag__background"></canvas>
+    </section>
+    <!-- /l-trendtag -->
+
+    <section class="l-recent l-spacer p-recent">
       <div class="l-container">
         <div class="c-heading">
-          <h2 class="c-heading__title">よく読まれている記事</h2>
-          <span class="c-heading__en u-uppercase u-enfont" lang="en">ranking</span>
+          <h2 class="c-heading__title">最新記事</h2>
+          <span class="c-heading__en u-uppercase u-enfont" lang="en">RECENT ARTICLES</span>
         </div><!-- /.c-heading -->
-        <div class="p-ranking__wrap">
-
+        <div class="c-cardgrid">
           <div class="c-card">
             <a href="#" class="c-card__thumbs">
               <img class="c-card__thumbs-img" src="/assets/img/demo01.png" alt="">
@@ -46,7 +209,7 @@
             <a href="#" class="c-card__thumbs">
               <img class="c-card__thumbs-img" src="/assets/img/demo02.png" alt="">
             </a>
-            <div class="c-card__category"><a href="#">進行中プロジェクト</a></div>
+            <div class="c-card__category -howto"><a href="#">SGハウツー</a></div>
             <h3 class="c-card__title"><a href="#">記事のタイトルが入ります。記事のタイトルが入ります。記事のタイトルが入ります。</a></h3>
             <ul class="c-card__tags">
               <li class="c-card__tags-tag"><a href="#">あるある</a></li>
@@ -62,7 +225,7 @@
             <div class="c-card__category"><a href="#">進行中プロジェクト</a></div>
             <h3 class="c-card__title"><a href="#">記事のタイトルが入ります。記事のタイトルが入ります。記事のタイトルが入ります。</a></h3>
             <ul class="c-card__tags">
-              <li class="c-card__tags-tag"><a href="#">あるある</a></li>
+              <li class="c-card__tags-tag"><a href="#">DSP</a></li>
               <li class="c-card__tags-tag"><a href="#">医療系</a></li>
             </ul>
             <p class="c-card__date">2021.12.01</p>
@@ -75,7 +238,7 @@
             <div class="c-card__category"><a href="#">進行中プロジェクト</a></div>
             <h3 class="c-card__title"><a href="#">記事のタイトルが入ります。記事のタイトルが入ります。記事のタイトルが入ります。</a></h3>
             <ul class="c-card__tags">
-              <li class="c-card__tags-tag"><a href="#">あるある</a></li>
+              <li class="c-card__tags-tag"><a href="#">社内政治</a></li>
               <li class="c-card__tags-tag"><a href="#">医療系</a></li>
             </ul>
             <p class="c-card__date">2021.12.01</p>
@@ -101,6 +264,102 @@
             <div class="c-card__category"><a href="#">進行中プロジェクト</a></div>
             <h3 class="c-card__title"><a href="#">記事のタイトルが入ります。記事のタイトルが入ります。記事のタイトルが入ります。</a></h3>
             <ul class="c-card__tags">
+              <li class="c-card__tags-tag"><a href="#">知財</a></li>
+              <li class="c-card__tags-tag"><a href="#">医療系</a></li>
+            </ul>
+            <p class="c-card__date">2021.12.01</p>
+          </div><!-- /c-card -->
+
+        </div><!-- /p-ranking__wrap -->
+
+        <div class="u-centerposition">
+          <a href="#" class="c-button" lang="en">View more</a>
+        </div><!-- /.u-centerposition -->
+      </div><!-- /.l-container -->
+    </section>
+    <!-- /.l-ranking -->
+    <hr>
+
+    <section class="l-ranking l-spacer p-ranking">
+      <div class="l-container">
+        <div class="c-heading">
+          <h2 class="c-heading__title">よく読まれている記事</h2>
+          <span class="c-heading__en u-uppercase u-enfont" lang="en">ranking</span>
+        </div><!-- /.c-heading -->
+        <div class="c-cardgrid">
+
+          <div class="c-card c-card__ranking">
+            <a href="#" class="c-card__thumbs">
+              <img class="c-card__thumbs-img" src="/assets/img/demo01.png" alt="">
+            </a>
+            <div class="c-card__category"><a href="#">進行中プロジェクト</a></div>
+            <h3 class="c-card__title"><a href="#">記事のタイトルが入ります。記事のタイトルが入ります。記事のタイトルが入ります。</a></h3>
+            <ul class="c-card__tags">
+              <li class="c-card__tags-tag"><a href="#">あるある</a></li>
+              <li class="c-card__tags-tag"><a href="#">担当者向け</a></li>
+            </ul>
+            <p class="c-card__date">2021.12.01</p>
+          </div><!-- /c-card -->
+
+          <div class="c-card c-card__ranking">
+            <a href="#" class="c-card__thumbs">
+              <img class="c-card__thumbs-img" src="/assets/img/demo02.png" alt="">
+            </a>
+            <div class="c-card__category"><a href="#">進行中プロジェクト</a></div>
+            <h3 class="c-card__title"><a href="#">記事のタイトルが入ります。記事のタイトルが入ります。記事のタイトルが入ります。</a></h3>
+            <ul class="c-card__tags">
+              <li class="c-card__tags-tag"><a href="#">あるある</a></li>
+              <li class="c-card__tags-tag"><a href="#">医療系</a></li>
+            </ul>
+            <p class="c-card__date">2021.12.01</p>
+          </div><!-- /c-card -->
+
+          <div class="c-card c-card__ranking">
+            <a href="#" class="c-card__thumbs">
+              <img class="c-card__thumbs-img" src="/assets/img/demo04.png" alt="">
+            </a>
+            <div class="c-card__category -howto"><a href="#">SGハウツー</a></div>
+            <h3 class="c-card__title"><a href="#">記事のタイトルが入ります。記事のタイトルが入ります。記事のタイトルが入ります。</a></h3>
+            <ul class="c-card__tags">
+              <li class="c-card__tags-tag"><a href="#">あるある</a></li>
+              <li class="c-card__tags-tag"><a href="#">医療系</a></li>
+            </ul>
+            <p class="c-card__date">2021.12.01</p>
+          </div><!-- /c-card -->
+
+          <div class="c-card c-card__ranking">
+            <a href="#" class="c-card__thumbs">
+              <img class="c-card__thumbs-img" src="/assets/img/demo05.png" alt="">
+            </a>
+            <div class="c-card__category"><a href="#">進行中プロジェクト</a></div>
+            <h3 class="c-card__title"><a href="#">記事のタイトルが入ります。記事のタイトルが入ります。記事のタイトルが入ります。</a></h3>
+            <ul class="c-card__tags">
+              <li class="c-card__tags-tag"><a href="#">あるある</a></li>
+              <li class="c-card__tags-tag"><a href="#">医療系</a></li>
+            </ul>
+            <p class="c-card__date">2021.12.01</p>
+          </div><!-- /c-card -->
+
+          <div class="c-card c-card__ranking">
+            <a href="#" class="c-card__thumbs">
+              <img class="c-card__thumbs-img" src="/assets/img/demo06.png" alt="">
+            </a>
+            <div class="c-card__category -howto"><a href="#">SGハウツー</a></div>
+            <h3 class="c-card__title"><a href="#">記事のタイトルが入ります。記事のタイトルが入ります。記事のタイトルが入ります。</a></h3>
+            <ul class="c-card__tags">
+              <li class="c-card__tags-tag"><a href="#">DSP</a></li>
+              <li class="c-card__tags-tag"><a href="#">新規事業立ち上げのコツ</a></li>
+            </ul>
+            <p class="c-card__date">2021.12.01</p>
+          </div><!-- /c-card -->
+
+          <div class="c-card c-card__ranking">
+            <a href="#" class="c-card__thumbs">
+              <img class="c-card__thumbs-img" src="/assets/img/demo03.png" alt="">
+            </a>
+            <div class="c-card__category"><a href="#">進行中プロジェクト</a></div>
+            <h3 class="c-card__title"><a href="#">記事のタイトルが入ります。記事のタイトルが入ります。記事のタイトルが入ります。</a></h3>
+            <ul class="c-card__tags">
               <li class="c-card__tags-tag"><a href="#">あるある</a></li>
               <li class="c-card__tags-tag"><a href="#">医療系</a></li>
             </ul>
@@ -108,11 +367,13 @@
           </div><!-- /c-card -->
 
         </div><!-- /p-ranking__wrap -->
+
         <div class="u-centerposition">
           <a href="#" class="c-button" lang="en">View more</a>
         </div><!-- /.u-centerposition -->
       </div><!-- /.l-container -->
-    </section><!-- /.l-ranking -->
+    </section>
+    <!-- /.l-ranking -->
 
     <section class="l-timeline p-timeline">
         <div class="l-container">
@@ -127,7 +388,8 @@
           </div><!-- /.p-timeline__inner -->
         </div><!-- /.l-container -->
         <canvas class="p-timeline__background"></canvas>
-    </section><!-- /.l-timeline -->
+    </section>
+    <!-- /.l-timeline -->
 
     <section class="l-sns p-sns">
       <h2 class="p-sns__title u-uppercase u-enfont u-centerposition" lang="en">connect to sns</h2>
@@ -136,9 +398,11 @@
         <li class="p-sns__icons-icon"><a href="#" target="_blank"><img src="/assets/img/facebook.svg" alt="" width="38px"></a></li>
         <li class="p-sns__icons-icon -note"><a href="#" target="_blank"><img src="/assets/img/note.svg" alt="" width="28px"></a></li>
       </ul><!-- /.p-sns__icons -->
-    </section><!-- /.l-sns -->
+    </section>
+    <!-- /.l-sns -->
 
   </main>
+
   <footer class="l-footer p-footer">
     <div class="l-container__wide">
       <ul class="p-footer__list">
@@ -154,5 +418,6 @@
       </div><!-- /.p-footer__copyright -->
     </div><!-- /.l-container__wide -->
   </footer>
+
 </body>
 </html>

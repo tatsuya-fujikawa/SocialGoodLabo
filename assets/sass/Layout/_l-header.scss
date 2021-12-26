@@ -1,0 +1,9 @@
+.l-header {
+    position: fixed;
+    top: 0;
+    height: 120px;
+    width: 100%;
+    background-color: var(--color-white);
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,.16);
+}
