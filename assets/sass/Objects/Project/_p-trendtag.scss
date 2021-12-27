@@ -3,6 +3,10 @@
         padding-bottom: 0;
         // width: 300px;
         // flex-basis: 50%;
+
+        @include mq('sp') {
+            padding-bottom: 20px;
+        }
     }
     &__background {
         position: absolute;
@@ -17,6 +21,9 @@
         display: flex;
         align-items: center;
 
+        @include mq('sp') {
+            display: block;
+        }
     }
     &__list {
         display: flex;
@@ -63,6 +70,13 @@
     right: 3px;
     top: 10px;
     width: 40px;
-    background-image: url(/assets/img/icon_arrow.svg);
+    background-image: url(../img/Icon_arrow.svg);
     background-size: contain;
+
+    @include mq('sp') {
+        top: -100px;
+        // right: 60%;
+        right: 0;
+        left: 80%;
+    }
 }

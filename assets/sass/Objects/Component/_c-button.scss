@@ -8,6 +8,11 @@
     transition: 0.2s ease;
     position: relative;
 
+    @include mq('sp') {
+        padding: rem(10) rem(40) rem(12);
+        font-size: rem(15);
+    }
+
     &:hover {
         background-color: var(--color-font);
         color: var(--color-white);
@@ -26,6 +31,7 @@
     &.-mv {
         background-color: var(--color-white);
         box-sizing: border-box;
+        border: 1px solid var(--color-white);
 
         &:hover {
             background-color: #000000;
@@ -63,5 +69,10 @@
         top: 50%;
         right: -42px;
         transition: 0.4s ease;
+
+        @include mq('sp') {
+            width: 25px;
+            right: -1px;
+        }
     }
 }

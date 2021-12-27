@@ -6,4 +6,8 @@
   overflow: hidden;
   z-index: 0;
   position: relative;
+  
+  @include mq('sp') {
+    padding: rem(40) 0;
+  }
 }

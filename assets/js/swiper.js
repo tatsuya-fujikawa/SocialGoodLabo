@@ -11,11 +11,16 @@ let mySwiper = new Swiper('#slide01', {
 
 let mySwiper2 = new Swiper('#slide02', {
     loop: true,
-    slidesPerView: 2.5,
+    slidesPerView: 1.25,
     spaceBetween: 20,
     navigation: {
-        prevEl: '.swiper-button-prev',
-        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev02',
+        nextEl: '.swiper-button-next02',
     },
+    breakpoints: {
+        768: {
+            slidesPerView: 2.5,
+        }
+    }
 });
 
