@@ -1,0 +1,42 @@
+.c-article {
+
+    &__inner {
+        display: flex;
+    }
+
+    &__thumbs {
+        width: 550px;
+        height: 415px;
+        img {
+            width: 550px;
+            height: 415px;
+            object-fit: cover;
+        }
+    }
+
+    &__lead {
+        background-color: #666B79;
+        color: var(--color-white);
+        width: 310px;
+        height: 415px;
+        padding: 0 rem(24);
+    }
+    &__title {
+        font-size: rem(16);
+        line-height: 28px;
+        padding-top: rem(80);
+    }
+    &__category {
+        font-size: rem(14);
+        padding-top: rem(36);
+    }
+    &__tag {
+        padding-top: rem(24);
+        font-size: rem(14);
+    }
+    &__date {
+        font-size: rem(14);
+        font-weight: bold;
+        padding-top: rem(24);
+    }
+}

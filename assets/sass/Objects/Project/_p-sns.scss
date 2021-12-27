@@ -12,6 +12,10 @@
     &-icon {
       padding-right: rem(34);
 
+      &:hover {
+        opacity: 0.7;
+      }
+
       &:last-child {
         padding-right: 0;
       }
@@ -19,6 +23,7 @@
       &.-note {
         position: relative;
         top: 3px;
+        
       }
     }
   }

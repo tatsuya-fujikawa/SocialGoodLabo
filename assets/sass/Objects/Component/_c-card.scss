@@ -1,0 +1,167 @@
+.c-card {
+    width: 360px;
+    position: relative;
+
+    &__thumbs {
+        display: block;
+        transition: 0.2s ease;
+        overflow: hidden;
+        position: relative;
+
+        &-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.2s ease;
+
+            &:hover {
+                transform: scale(1.1) rotate(1deg);
+                transition: 0.2s ease;
+                filter: blur(1px);
+            }
+        }
+    }
+
+    &__title {
+        font-size: rem(16);
+        line-height: 28px;
+        padding-top: 15px;
+        
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    &__category {
+        font-size: rem(14);
+        padding-top: rem(14);
+        font-weight: 700;
+
+        a {
+            font-weight: 700;
+            display: inline-block;
+            padding: 3px 15px;
+            background: linear-gradient(21deg, rgba(235,185,245,1) 0%, rgba(106,205,231,1) 100%);
+            transition: 0.2s ease;
+
+            &:hover {
+                background: linear-gradient(60deg, rgba(235,185,245,1) 0%, rgba(106,205,231,1) 100%);
+                transition: 0.2s ease;
+                opacity: 0.9;
+            }
+        }
+
+        &.-howto {
+
+            a {
+                background: rgb(106,231,193);
+                background: linear-gradient(21deg, rgba(106,231,193,1) 0%, rgba(255,110,137,1) 100%);
+
+                &:hover {
+                    background: linear-gradient(60deg, rgba(106,231,193,1) 0%, rgba(255,110,137,1) 100%);
+                }
+            }
+        }
+    }
+
+
+    &__tags {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 1em;
+
+        &-tag {
+            font-size: rem(14);
+            font-weight: bold;
+            padding-right: 15px;
+            position: relative;
+
+            &:before {
+                content: '';
+                display: inline-block;
+                position: relative;
+                background-image: url(/assets/img/tag.svg);
+                background-size: 95%;
+                background-repeat: no-repeat;
+                width: 16px;
+                height: 16px;
+                top: 50%;
+                transform: translateY(-50%);
+                margin-right: 2px;
+            }
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+    &__date {
+        text-align: right;
+        font-size: rem(14);
+        font-weight: bold;
+    }
+}
+
+.c-card__ranking {
+    counter-increment: ranking;
+    &:first-of-type {
+        &:before {
+            position: absolute;
+            content: '';
+            z-index: 10;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 93px 93px 0 0;
+            border-color: #D5C128 transparent transparent transparent;
+        }
+    }
+    &:nth-of-type(2) {
+        &:before {
+            position: absolute;
+            content: '';
+            z-index: 10;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 93px 93px 0 0;
+            border-color: #2E6DA5 transparent transparent transparent;
+        }
+    }
+    &:nth-of-type(3) {
+        &:before {
+            position: absolute;
+            content: '';
+            z-index: 10;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 93px 93px 0 0;
+            border-color: #BA583B transparent transparent transparent;
+        }
+    }
+    &:nth-of-type(n+4) {
+        &:before {
+            position: absolute;
+            content: '';
+            z-index: 10;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 93px 93px 0 0;
+            border-color: #707070 transparent transparent transparent;
+        }
+    }
+
+    &:after {
+        position: absolute;
+        content: counter(ranking);
+        z-index: 15;
+        top: 10px;
+        left: 18px;
+        font-size: rem(24);
+        color: var(--color-white);
+        font-family: 'IBM Plex Sans', sans-serif;
+    }
+
+}

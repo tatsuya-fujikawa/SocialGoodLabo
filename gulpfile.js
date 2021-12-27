@@ -1,7 +1,7 @@
 "use strict"
 // gulpプラグインを読み込み
 const { src, dest, watch } = require("gulp");
-// Sassをコンパイルするプラグインを読み込み
+// Sassをコンパイルするプラグインを読み込みnpm
 const sass = require('gulp-sass')(require('sass'));
 const postcss = require("gulp-postcss");
 const sassGlob = require("gulp-sass-glob");

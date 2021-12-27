@@ -1,0 +1,8 @@
+.p-ranking {
+    &__wrap {
+        display: grid;
+        grid-template-columns: 360px 360px 360px;
+        gap: 60px;
+        padding-bottom: 60px;
+    }
+}
