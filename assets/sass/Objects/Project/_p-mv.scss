@@ -17,14 +17,28 @@
         // padding-top: 70px;
         display: flex;
         justify-content: space-between;
+
+        @include mq('sp') {
+            flex-wrap: wrap;
+        }
     }
 
     &__left {
         flex-basis: 40%;
+
+        @include mq('sp') {
+            flex-basis: 100%;
+            order: 1;
+        }
     }
     &__right {
         flex-basis: 60%;
         text-align: right;
+
+        @include mq('sp') {
+            flex-basis: 100%;
+            order: 0;
+        }
     }
 
     &__title {
@@ -33,6 +47,12 @@
         font-weight: bold;
         line-height: 71px;
         padding-bottom: rem(50);
+
+        @include mq('sp') {
+            padding-top: rem(40);
+            font-size: rem(28);
+            line-height: 45px;
+        }
     }
     &__text {
         color: var(--color-white);
@@ -40,5 +60,14 @@
         line-height: 37px;
         font-weight: bold;
         padding-bottom: rem(56);
+
+        @include mq('sp') {
+            padding-bottom: rem(32);
+        }
+    }
+    &__button {
+        @include mq('sp') {
+            padding-bottom: rem(32);
+        }
     }
 }

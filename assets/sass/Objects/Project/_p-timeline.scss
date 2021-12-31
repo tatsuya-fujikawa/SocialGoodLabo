@@ -11,15 +11,31 @@
   &__inner {
     display: flex;
     align-items: center;
+
+    @include mq('sp') {
+      flex-wrap: wrap;
+    }
   }
   &__left {
     flex-basis: 50%;
     text-align: center;
+
+    @include mq('sp') {
+      flex-basis: 90%;
+      margin: 0 auto;
+      order: 1;
+    }
   }
   &__right {
     flex-basis: 50%;
     text-align: center;
     color: var(--color-white);
+    padding-bottom: rem(20);
+
+    @include mq('sp') {
+      order: 0;
+      flex-basis: 100%;
+    }
   }
 
   &__text {
@@ -28,10 +44,15 @@
     position: relative;
     padding-bottom: rem(30);
 
+    @include mq('sp') {
+      font-size: rem(14);
+      padding-bottom: rem(20);
+    }
+
     &:before {
       content: '';
       position: relative;
-      background-image: url(/assets/img/twitter_w.svg);
+      background-image: url(../img/twitter_w.svg);
       width: 40px;
       height: 40px;
       background-size: 100%;

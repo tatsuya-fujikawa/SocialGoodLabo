@@ -1,29 +1,39 @@
 .p-pickup .swiper__parent {
     position: relative;
 }
-.p-pickup .swiper__parent .swiper-button-prev{
+.p-pickup .swiper__parent .swiper-button-prev02{
     position: absolute;
     top: -20%;
+    // top: 10%;
     left: 65%;
     width: 40px;
-    background-image: url(/assets/img/prev_icon.svg);
+    background-image: url(../img/prev_icon.svg);
     background-size: contain;
+    @include mq('sp') {
+        left: 65%;
+        top: -12%;
+    }
 }
-.p-pickup .swiper__parent .swiper-button-next{
+.p-pickup .swiper__parent .swiper-button-next02{
     position: absolute;
     top: -20%;
     right: 28%;
     width: 40px;
-    background-image: url(/assets/img/next_icon.svg);
+    background-image: url(../img/next_icon.svg);
     background-size: contain;
+
+    @include mq('sp') {
+        right: 7%;
+        top: -12%;
+    }
 }
-.p-pickup .swiper__parent .swiper-button-prev:hover,
-.p-pickup .swiper__parent .swiper-button-next:hover {
+.p-pickup .swiper__parent .swiper-button-prev02:hover,
+.p-pickup .swiper__parent .swiper-button-next02:hover {
     opacity: 0.8;
 }
 
-.p-pickup .swiper__parent .swiper-button-prev:after, 
-.p-pickup .swiper__parent .swiper-button-next:after {
+.p-pickup .swiper__parent .swiper-button-prev02:after, 
+.p-pickup .swiper__parent .swiper-button-next02:after {
     font-family: swiper-icons;
     font-size: var(--swiper-navigation-size);
     text-transform: none !important;

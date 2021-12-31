@@ -1,4 +1,8 @@
 .l-sns {
   padding: rem(87) 0 rem(90);
   background-color: var(--color-gray);
+
+  @include mq('sp') {
+    padding: rem(40);
+  }
 }

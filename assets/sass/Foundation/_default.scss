@@ -70,7 +70,7 @@ $layout-width-inner: 1200px;
 $breakpoints: (
   "small": "screen and (max-width: 425px)",
   "sp": "screen and (max-width: 767px)",
-  "tab": "screen and (max-width: 1000px)", //inner : 1000px幅
+  "tab": "screen and (max-width: 1200px)", //inner : 1200px幅 
   "pc": "screen and (min-width: #{$layout-width-inner})"
 );
 

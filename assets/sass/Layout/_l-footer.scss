@@ -1,4 +1,8 @@
 .l-footer {
   // padding: 8em 0;
   padding: rem(110) 0;
+
+  @include mq('sp') {
+    padding: rem(40) 0;
+  }
 }
