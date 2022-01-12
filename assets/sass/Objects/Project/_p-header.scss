@@ -42,6 +42,18 @@
             }
             li {
                 padding-right: 0;
+
+                span {
+                    background-image: url(../img/search.svg);
+                    background-size: contain;
+                    width: 33px;
+                    height: 30px;
+                    display: inline-block;
+
+                    &._show {
+                        background-image: url(../img/close.svg);
+                    }
+                }
             }
         }
     }
@@ -115,6 +127,7 @@
                 position: absolute;
                 width: 1px;
                 height: 20px;
+                top: -5px;
                 right: 0;
                 background-color: #A1A3AC;
             }
@@ -161,5 +174,86 @@
         }
     }
 
+    &__search {
+        background-color: rgba(255,255,255,0.9);
+        height: 70px;
+        z-index: 10;
+        transition: 0.3s;
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+        width: 100%;
+        top: 120px;
+        left: 0;
 
+        @include mq('sp') {
+            top: 52px;
+        }
+
+        &-inner {
+            display: flex;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &-input {
+            font-size: 20px;
+            line-height: 40px;
+            height: 40px;
+            background-color: #ffffff;
+            padding: 0 15px;
+            width: 530px;
+            vertical-align: middle;
+
+            @include mq('sp') {
+                width: 80%;
+            }
+        }
+
+        &-label {
+            display: inline-block;
+            cursor: pointer;
+            width: 38px;
+            height: 40px;
+            background-image: url(../img/search.svg);
+            background-position: left center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin-left: 22px;
+            vertical-align: middle;
+            transition: opacity 0.2s ease-in-out;
+
+            @include mq('sp') {
+                margin-left: 2%;
+                font-size: 16px;
+            }
+
+            & input {
+                opacity: 0;
+            }
+        }
+
+    }
+
+}
+
+.p-header__search._show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.p-header__humbergerMenu-search span {
+    background-image: url(../img/search.svg);
+    background-size: contain;
+    top: 5px;
+    width: 22px;
+    height: 30px;
+    display: inline-block;
+    position: relative;
+    top: 5px;
+
+    &._show {
+        background-image: url(../img/close.svg);
+    }
 }

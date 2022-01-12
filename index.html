@@ -23,14 +23,13 @@
 <link rel="stylesheet" href="./assets/css/style.css">
 <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
   <script src="./assets/js/particles.js"></script>
-  <script src="./assets/js/particles2.js"></script>
-  <script src="./assets/js/particles3.js"></script>
   <script src="./assets/js/particle_mv.js" defer></script>
   <script src="./assets/js/particle_timeline.js" defer></script>
   <script src="./assets/js/particle_trendtag.js" defer></script>
   <script src="./assets/js/swiper-bundle.min.js" defer></script>
   <script src="./assets/js/swiper.js" defer></script>
   <script src="./assets/js/humberger.js" defer></script>
+  <script src="./assets/js/searchButton.js" defer></script>
   <meta name="robots" content="noindex">
   <title>SG lab(develop)</title>
 </head>
@@ -44,7 +43,8 @@
           <li class="note"><a href="#" target="_blank"><img src="./assets/img/note.svg" alt="" width="22px"></a></li>
           <li>
             <ul class="p-header__icons-search">
-              <li><a href="#"><img src="./assets/img/search.svg" alt="" width="27px"></a></li>
+              <!-- <li><a href="#"><img src="./assets/img/search.svg" alt="" width="27px" class="js-searchButton"></a></li> -->
+              <li><a href="#"><span class="js-searchButton"></span></a></li>
             </ul>
           </li>
         </ul>
@@ -64,7 +64,8 @@
         </div>
         <!-- /SPハンバーガーメニュー -->
         <div class="p-header__humbergerMenu">
-            <a href="#"><img src="./assets/img/search.svg" alt="" width="22px"></a>
+            <!-- <a href="#"><img src="./assets/img/search.svg" alt="" width="22px"></a> -->
+            <a href="#" class="p-header__humbergerMenu-search"><span class="js-searchButton"></span></a>
             <button id="js-btn" class="p-header__humberger">
               <span></span>
               <span></span>
@@ -75,7 +76,20 @@
 
       </div><!-- /p-header__lower -->
     </div><!-- /l-container__wide -->
+    
   </header>
+  <div class="p-header__search">
+    <div class="l-container">
+      <div class="p-header__search-inner">
+        <form action="" role="search">
+          <input class="p-header__search-input" type="text" placeholder="ニュース内検索">
+          <label class="p-header__search-label">
+            <input type="submit">
+          </label>
+        </form>
+      </div><!-- /.p-header__search-inner -->
+    </div><!-- /.l-container -->
+  </div><!-- /.p-header__search -->
           <!-- /SPナビゲーションメニュー -->
           <nav id="js-nav" class="p-nav">
             <h2 class="p-nav__title">SocialGoodラボとは？</h2>
