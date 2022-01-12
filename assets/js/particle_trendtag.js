@@ -3,7 +3,8 @@
 var particles3 = Particles3.init({
   selector: '.p-trendtag__background',
   sizeVariations: 10,
-  color: ['#00bbdd', '#404B69', '#DBEDF3'],
+  maxParticles: 60,
+  color: ['#f7909a', '#75fcfd', '#8d8aea', '#ffffff','#f4ef9f'],
   connectParticles: true,
   retina_detect : true,
   resize : true,
@@ -13,7 +14,7 @@ var particles3 = Particles3.init({
       options: {
         maxParticles: 20,
         connectParticles: true,
-        color: ['#00bbdd', '#404B69', '#DBEDF3'],
+        color: ['#f7909a', '#75fcfd', '#8d8aea', '#ffffff','#f4ef9f'],
       }
     }
   ]
