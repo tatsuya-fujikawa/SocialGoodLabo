@@ -12,4 +12,27 @@
     font-weight: 600;
     letter-spacing: 0.005em;
   }
+
+  &.-lower {
+    position: relative;
+    padding-top: 15px;
+
+    &:before {
+      position: absolute;
+      content: '';
+      width: 30px;
+      height: 4px;
+      background-color: #338BD6;
+      top: 0px;
+      left: 0;
+    }
+  }
+
+  &__sidebar {
+    text-align: center;
+    padding-bottom: rem(30);
+    &-title {
+      font-size: rem(20);
+    }
+  }
 }

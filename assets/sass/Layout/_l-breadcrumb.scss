@@ -1,0 +1,10 @@
+.l-breadcrumb {
+  background-image: url(../img/single/bg_breadcrumb.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include mq('sp') {
+    background-size: auto;
+  }
+}

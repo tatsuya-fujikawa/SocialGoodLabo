@@ -1,0 +1,14 @@
+.p-sidebar {
+  width: 320px;
+
+  &__list {
+    &-item {
+      padding-top: rem(10);
+      padding-bottom: rem(20);
+      border-bottom: 1px solid #D0D3DC;
+    }
+  }
+  &__ranking {
+    padding-bottom: rem(80);
+  }
+}

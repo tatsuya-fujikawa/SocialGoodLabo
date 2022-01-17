@@ -12,4 +12,10 @@
         gap: 20px;
         grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     }
+
+    &.-lower {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 50px;
+        padding-bottom: 60px;
+    }
 }
