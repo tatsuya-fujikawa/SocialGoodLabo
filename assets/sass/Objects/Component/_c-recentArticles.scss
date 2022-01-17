@@ -1,0 +1,22 @@
+.c-recentArticles {
+    &__item {
+        display: flex;
+    }
+    &__thumb {
+        flex-basis: 25%;
+        margin-right: 15px;
+        img {
+            object-fit: cover;
+            height: 50px;
+        }
+    }
+    &__title {
+        flex-basis: 75%;
+        font-size: rem(14);
+        font-weight: bold;
+
+        & a:hover {
+            opacity: 0.8;
+        }
+    }
+}

@@ -41,6 +41,10 @@
     flex-basis: 80%;
     font-weight: bold;
     position: relative;
+
+    & a:hover {
+      opacity: 0.8;
+    }
   }
   &__date {
     text-align: right;

@@ -963,6 +963,9 @@ img {
   font-weight: bold;
   position: relative;
 }
+.c-rankingItems__title a:hover {
+  opacity: 0.8;
+}
 .c-rankingItems__date {
   text-align: right;
   padding-top: 0.3125rem;
@@ -982,6 +985,27 @@ img {
 .c-rankingItems__item:nth-of-type(3) .c-rankingItems__number:before {
   background: #ba583b;
   background: linear-gradient(180deg, #ba583b 0%, #883f2b 100%);
+}
+
+.c-recentArticles__item {
+  display: flex;
+}
+.c-recentArticles__thumb {
+  flex-basis: 25%;
+  margin-right: 15px;
+}
+.c-recentArticles__thumb img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 50px;
+}
+.c-recentArticles__title {
+  flex-basis: 75%;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+.c-recentArticles__title a:hover {
+  opacity: 0.8;
 }
 
 .c-cardgrid {
