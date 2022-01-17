@@ -44,7 +44,7 @@
           <li>
             <ul class="p-header__icons-search">
               <!-- <li><a href="#"><img src="./assets/img/search.svg" alt="" width="27px" class="js-searchButton"></a></li> -->
-              <li><a href="#"><span class="js-searchButton"></span></a></li>
+              <li><button><span class="js-searchButton"></span></button></li>
             </ul>
           </li>
         </ul>
@@ -65,7 +65,7 @@
         <!-- /SPハンバーガーメニュー -->
         <div class="p-header__humbergerMenu">
             <!-- <a href="#"><img src="./assets/img/search.svg" alt="" width="22px"></a> -->
-            <a href="#" class="p-header__humbergerMenu-search"><span class="js-searchButton"></span></a>
+            <button class="p-header__humbergerMenu-search"><span class="js-searchButton"></span></button>
             <button id="js-btn" class="p-header__humberger">
               <span></span>
               <span></span>
@@ -76,20 +76,20 @@
 
       </div><!-- /p-header__lower -->
     </div><!-- /l-container__wide -->
-    
+    <div class="p-header__search">
+      <div class="l-container">
+        <div class="p-header__search-inner">
+          <form action="" role="search">
+            <input class="p-header__search-input" type="text" placeholder="ニュース内検索">
+            <label class="p-header__search-label">
+              <input type="submit">
+            </label>
+          </form>
+        </div><!-- /.p-header__search-inner -->
+      </div><!-- /.l-container -->
+    </div><!-- /.p-header__search -->
   </header>
-  <div class="p-header__search">
-    <div class="l-container">
-      <div class="p-header__search-inner">
-        <form action="" role="search">
-          <input class="p-header__search-input" type="text" placeholder="ニュース内検索">
-          <label class="p-header__search-label">
-            <input type="submit">
-          </label>
-        </form>
-      </div><!-- /.p-header__search-inner -->
-    </div><!-- /.l-container -->
-  </div><!-- /.p-header__search -->
+  
           <!-- /SPナビゲーションメニュー -->
           <nav id="js-nav" class="p-nav">
             <h2 class="p-nav__title">SocialGoodラボとは？</h2>
