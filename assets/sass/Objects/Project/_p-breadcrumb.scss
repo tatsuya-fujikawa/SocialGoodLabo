@@ -1,0 +1,40 @@
+.p-breadcrumb {
+  &__list {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    display: flex;
+
+    & li {
+      font-size: rem(14);
+      color: var(--color-white);
+      font-weight: bold;
+      position: relative;
+
+      & a {
+        display: block;
+        position: relative;
+
+        &:hover {
+          opacity: 0.8;
+          cursor: pointer;
+        }
+
+        &:after {
+          position: relative;
+          content: '>';
+          margin-left: 12px;
+          margin-right: 12px;
+        }
+
+      }
+
+      &:last-of-type {
+        a {
+          &:after {
+            content: '';
+          }
+        }
+      }
+    }
+  }
+}

@@ -11,11 +11,13 @@
 .u-strong {
     font-weight: bold;
 }
+.u-spacer__header { //header fix しているので相殺する class
+    height: 120px;
 
-.u-pickup {
-    color: var(--color-orange);
+    @include mq('sp') {
+        height: 52px;
+    }
 }
-
 .u-white {
     color: var(--color-white);
 }
