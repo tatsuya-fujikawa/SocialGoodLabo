@@ -4,6 +4,11 @@
     padding-bottom: 1.5rem;
     display: flex;
 
+    @include mq('sp') {
+      overflow-x: scroll;
+    white-space: nowrap;
+    }
+
     & li {
       font-size: rem(14);
       color: var(--color-white);

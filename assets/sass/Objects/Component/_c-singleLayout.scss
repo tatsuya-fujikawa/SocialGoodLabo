@@ -1,3 +1,7 @@
 .c-singleLayout {
   display: flex;
+
+  @include mq('tab') {
+    display: block;
+  }
 }
