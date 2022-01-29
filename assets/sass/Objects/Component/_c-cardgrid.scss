@@ -17,5 +17,15 @@
         grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
         gap: 50px;
         padding-bottom: 60px;
+
+        @include mq('tab') {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        @include mq('sp') {
+            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        }
     }
 }
+

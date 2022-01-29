@@ -80,3 +80,29 @@
         left: 80%;
     }
 }
+
+.p-trendtag {
+    &__list{
+        &.-lower {
+        flex-wrap: wrap;
+        margin: 0 rem(26);
+        }
+
+        &-item {
+            &.-lower {
+                margin-bottom: rem(16);
+                padding-right: rem(25);
+
+                &:first-child {
+                    padding-left: 0;
+                }
+
+                & a {
+                    padding: 9px 13px 10px 10px;
+                }
+            }
+        }
+
+    }
+    
+}

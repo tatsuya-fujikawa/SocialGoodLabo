@@ -26,6 +26,7 @@
   <script src="./assets/js/particle_mv.js" defer></script>
   <script src="./assets/js/particle_timeline.js" defer></script>
   <script src="./assets/js/particle_trendtag.js" defer></script>
+  <script src="./assets/js/particle_sidebar.js" defer></script>
   <script src="./assets/js/swiper-bundle.min.js" defer></script>
   <script src="./assets/js/swiper.js" defer></script>
   <script src="./assets/js/humberger.js" defer></script>
@@ -222,6 +223,7 @@
         </div><!-- /.p-posts__mainLine -->
 
         <aside class="p-sidebar">
+
           <div class="p-sidebar__ranking">
             <div class="c-heading__sidebar">
               <h3 class="c-heading__sidebar-title">よく読まれている記事</h3>
@@ -286,7 +288,8 @@
               </li>
 
             </ul><!-- /.p-sidebar__list -->
-          </div><!-- /.p-sidebar__ranking -->
+          </div>
+          <!-- /.p-sidebar__ranking -->
 
           <div class="p-sidebar__recentArticles">
             <div class="c-heading__sidebar">
@@ -344,9 +347,28 @@
                   </a>
                 </h3>
               </li>
-
             </ul><!-- /.p-sidebar__list -->
-          </div><!-- /.p-sidebar__recentArticles -->
+          </div>
+          <!-- /.p-sidebar__recentArticles -->
+
+          <div class="l-sidebar__trendTags p-sidebar__trendTags">
+            <div class="c-heading__sidebar u-white">
+              <h3 class="c-heading__sidebar-title">トレンドタグ</h3>
+              <span class="c-heading__en u-uppercase u-enfont">trend tags</span>
+            </div><!-- /.c-heading -->
+            <ul class="p-trendtag__list -lower">
+              <li class="p-trendtag__list-item -lower"><a href="#">#担当者向け</a></li>
+              <li class="p-trendtag__list-item -lower"><a href="#">#神戸市</a></li>
+              <li class="p-trendtag__list-item -lower"><a href="#">#仙台市</a></li>
+              <li class="p-trendtag__list-item -lower"><a href="#">#DSP</a></li>
+              <li class="p-trendtag__list-item -lower"><a href="#">#知財</a></li>
+              <li class="p-trendtag__list-item -lower"><a href="#">#あるある</a></li>
+              <li class="p-trendtag__list-item -lower"><a href="#">#社内政治</a></li>
+            </ul>
+            <canvas class="p-sidebar__background"></canvas>
+          </div>
+          <!-- /.p-sidebar__trendTags -->
+
         </aside>
       </div><!-- /.c-singleLayout -->
     </div><!-- /.l-spacer -->

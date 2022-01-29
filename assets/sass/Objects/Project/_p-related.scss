@@ -1,0 +1,10 @@
+.p-related {
+  width: 820px;
+    margin-right: 3.625rem;
+    margin-bottom: 3.625rem;
+
+    @include mq('sp') {
+      width: 95%;
+      margin: rem(40) auto 0;
+  }
+}

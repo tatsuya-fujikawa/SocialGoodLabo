@@ -3,6 +3,11 @@
   margin-right: rem(58);
   margin-bottom: rem(58);
 
+  @include mq('sp') {
+      width: 95%;
+      margin: 0 auto;
+  }
+
   &__top {
       display: flex;
       justify-content: space-between;
@@ -55,14 +60,24 @@
         h1 {
             font-size: rem(30);
             font-weight: bold;
+
+            @include mq('sp') {
+                font-size: rem(20);
+            }
         }
         h2 {
             font-size: rem(30);
             font-weight: bold;
+            @include mq('sp') {
+                font-size: rem(20);
+            }
         }
         h3 {
             font-size: rem(30);
             font-weight: bold;
+            @include mq('sp') {
+                font-size: rem(20);
+            }
         }
     }
 
@@ -70,6 +85,10 @@
         display: flex;
         justify-content: space-between;
         padding-bottom: rem(40);
+
+        @include mq('sp') {
+            display: block;
+        }
     }
 
     &__tags {
@@ -124,6 +143,13 @@
             margin-left: rem(16);
             position: relative;
 
+            @include mq('sp') {
+                margin-top: rem(16);
+                &:first-of-type {
+                    margin-left: 0;
+                }
+            }
+
             &:before {
                 position: absolute;
                 content: '';
@@ -170,15 +196,19 @@
 
         &.-bottom {
             justify-content: flex-end;
+
+            @include mq('sp') {
+                padding-top: rem(16);
+            }
         }
     }
 
     &__article {
         margin: 0 auto;
 
-        &-mv {
-            padding-bottom: rem(40);
-        }
+        // &-mv {
+        //     padding-bottom: rem(40);
+        // }
 
         img {
             display: block;
@@ -218,5 +248,9 @@
     &__bottom {
         display: flex;
         justify-content: space-between;
+
+        @include mq('sp') {
+            display: block;
+        }
     }
 }
