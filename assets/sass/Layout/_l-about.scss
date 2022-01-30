@@ -1,0 +1,8 @@
+.l-about {
+    background: rgb(30,25,42);
+    background: linear-gradient(180deg, rgba(30,25,42,1) 0%, rgba(212,210,223,1) 100%);
+
+    &__spacer {
+        padding-top: rem(112);
+    }
+}

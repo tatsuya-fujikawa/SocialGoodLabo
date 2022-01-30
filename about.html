@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function(doc) {
+      var ua = navigator.userAgent.toLowerCase();
+      if (/ipad/.test(ua) || /android/.test(ua) && !/mobile/.test(ua)) {
+        doc.getElementById('viewport').setAttribute('content', 'width=1024');
+      } else {
+        doc.getElementById('viewport').setAttribute('content', 'width=device-width, initial-scale=1');
+      }
+    }(document));
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./assets/css/style.css">
+<link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+  <script src="./assets/js/particles.js"></script>
+  <script src="./assets/js/particle_mv.js" defer></script>
+  <script src="./assets/js/particle_timeline.js" defer></script>
+  <script src="./assets/js/particle_trendtag.js" defer></script>
+  <script src="./assets/js/particle_sidebar.js" defer></script>
+  <script src="./assets/js/swiper-bundle.min.js" defer></script>
+  <script src="./assets/js/swiper.js" defer></script>
+  <script src="./assets/js/humberger.js" defer></script>
+  <script src="./assets/js/searchButton.js" defer></script>
+  <meta name="robots" content="noindex">
+  <title>記事タイトル｜SG lab(develop)</title>
+</head>
+<body>
+  <header class="l-header p-header">
+    <div class="l-container__wide">
+      <div class="p-header__icons">
+        <ul class="p-header__icons-sns">
+          <li><a href="#" target="_blank"><img src="./assets/img/twitter.svg" alt="" width="32px"></a></li>
+          <li><a href="#" target="_blank"><img src="./assets/img/facebook.svg" alt="" width="30px"></a></li>
+          <li class="note"><a href="#" target="_blank"><img src="./assets/img/note.svg" alt="" width="22px"></a></li>
+          <li>
+            <ul class="p-header__icons-search">
+              <!-- <li><a href="#"><img src="./assets/img/search.svg" alt="" width="27px" class="js-searchButton"></a></li> -->
+              <li><button><span class="js-searchButton"></span></button></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /p-header__icons -->
+      <div class="p-header__lower">
+        <div class="p-header__logo">
+          <a href="#">
+            <p class="u-visually-hidden">SG lab</p>
+            <img src="./assets/img/logo.svg" alt="SG lab">
+        </a>
+        </div><!-- /p-header__logo -->
+        <div class="p-header__right">
+          <ul class="p-header__categoryList">
+            <li class="p-header__categoryList-link"><a href="#">SGハウツー</a></li>
+            <li class="p-header__categoryList-link"><a href="#">進行中プロジェクト</a></li>
+          </ul>
+        </div>
+        <!-- /SPハンバーガーメニュー -->
+        <div class="p-header__humbergerMenu">
+            <!-- <a href="#"><img src="./assets/img/search.svg" alt="" width="22px"></a> -->
+            <button class="p-header__humbergerMenu-search"><span class="js-searchButton"></span></button>
+            <button id="js-btn" class="p-header__humberger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+        </div><!-- /.p-header__humberger -->
+        <!-- /SPハンバーガーメニュー -->
+
+      </div><!-- /p-header__lower -->
+    </div><!-- /l-container__wide -->
+    <div class="p-header__search">
+      <div class="l-container">
+        <div class="p-header__search-inner">
+          <form action="" role="search">
+            <input class="p-header__search-input" type="text" placeholder="ニュース内検索">
+            <label class="p-header__search-label">
+              <input type="submit">
+            </label>
+          </form>
+        </div><!-- /.p-header__search-inner -->
+      </div><!-- /.l-container -->
+    </div><!-- /.p-header__search -->
+  </header>
+  
+          <!-- /SPナビゲーションメニュー -->
+          <nav id="js-nav" class="p-nav">
+            <h2 class="p-nav__title">SocialGoodラボとは？</h2>
+            <div class="p-nav__inner">
+              <h3 class="p-nav__subtitle">カテゴリ</h3>
+              <ul class="p-nav__list">
+                <li><a href="#">SGハウツー</a></li>
+                <li><a href="#">進行中プロジェクト</a></li>
+              </ul><!-- /.p-nav__list -->
+              <h3 class="p-nav__subtitle">トレンドタグ</h3>
+              <ul class="p-nav__list">
+                <li><a href="#">担当者向け</a></li>
+                <li><a href="#">神戸市</a></li>
+                <li><a href="#">仙台市</a></li>
+                <li><a href="#">DSP</a></li>
+                <li><a href="#">知財</a></li>
+                <li><a href="#">あるある</a></li>
+                <li><a href="#">社内政治</a></li>
+              </ul><!-- /.p-nav__list -->
+              <h3 class="p-nav__subtitle">公式SNS</h3>
+              <ul class="p-nav__list -sns">
+                <li><a href="#"><img src="./assets/img/twitter.svg" alt="" width="40px"></a></li>
+                <li><a href="#"><img src="./assets/img/facebook.svg" alt="" width="38px"></a></li>
+                <li class="-note"><a href="#"><img src="./assets/img/note.svg" alt="" width="28px"></a></li>
+              </ul><!-- /.p-nav__list -->
+              <div class="p-nav__center u-centerposition">
+                <a class="c-blankLink" href="#" target="_blank">お問い合わせ</a>
+              </div>
+            </div><!-- /.p-nav__inner -->
+          </nav>
+          <!-- /SPナビゲーションメニュー -->
+
+  <main>
+    <div class="u-spacer__header"></div><!--//header fix しているので相殺する class-->
+    <nav class="l-breadcrumb p-breadcrumb">
+      <h2 class="u-visually-hidden">パンくずリスト</h2>
+      <div class="l-container">
+        <ul class="p-breadcrumb__list">
+          <li><a href="#">SG Lab</a></li>
+          <li><a href="#">SG labとは</a></li>
+        </ul><!-- /.p-breadcrumb__list -->
+      </div><!-- /.l-container -->
+    </nav>
+
+    <section class="l-about p-about">
+        <div class="l-about__spacer">
+            <div class="p-about__mvWrap">
+                <div class="p-about__mv">
+                    <img src="./assets/img/about/about_01.png" alt="">
+                </div><!-- /p-about__mv -->
+                <div class="p-about__mvWrap-container">
+                    <div class="c-heading u-white">
+                        <h2 class="c-heading__title">SG labとは</h2>
+                        <span class="c-heading__en u-uppercase u-enfont" lang="en">ABOUT SG Lab</span>
+                    </div><!-- /.c-heading -->
+                    <div class="p-about__mvWrap-body u-white">
+                        <h3 class="p-about__lead">SocialGoodラボとは？</h3>
+                        <p class="p-about__text">テキストが入りますテキストが入りますテキストが入りますキストが入りますキストが入ります。テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。テキストが入ります。
+                        </p>
+                        <p class="p-about__text">
+                            テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。テキストが入りますテキストが入ります。
+                        </p><!-- /p-about__text -->
+                    </div><!-- /p-about__mvWrap-body -->
+                </div><!-- /p-about__mvWrap-container -->
+            </div><!-- /p-about__mvWrap -->
+
+            <div class="p-about__bottomWrap">
+                <div class="p-about__bottomWrap-mv">
+                    <img src="./assets/img/about/about_02.png" alt="">
+                </div><!-- /p-about__bottomWrap-mv -->
+                <div class="p-about__bottomWrap-container u-white">
+                    <div class="p-about__bottomWrap-container-body">
+                        <h3 class="p-about__lead">日本のSocialGoodビジネスの現状</h3>
+                            <p class="p-about__text">テキストが入りますテキストが入りますテキストが入りますキストが入りますキストが入ります。テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。テキストが入ります。
+                            </p>
+                            <p class="p-about__text">
+                                テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。テキストが入りますテキストが入ります。
+                            </p><!-- /p-about__text -->
+                            <p class="p-about__text">
+                                テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。テキストが入りますテキストが入ります。
+                            </p><!-- /p-about__text -->
+
+                    </div><!-- /p-about__bottomWrap-container -->
+                    </div><!-- /p-about__bottomWrap-container-body -->
+            </div>
+        </div><!-- /p-about__spacer -->
+    </section><!-- /l-about -->
+
+    <section class="l-timeline p-timeline">
+        <div class="l-container">
+          <div class="p-timeline__inner">
+            <div class="p-timeline__left">
+              <img src="https://placehold.jp/440x440.png" alt="">
+            </div><!-- /.p-timeline__left -->
+            <div class="p-timeline__right">
+                <h3 class="p-timeline__text">最新情報をチェック</h3>
+                <a href="#aaa" target="_blank" class="p-timeline__button">＠sglaboをフォロー</a>
+            </div><!-- /.p-timeline__right -->
+          </div><!-- /.p-timeline__inner -->
+        </div><!-- /.l-container -->
+        <canvas class="p-timeline__background"></canvas>
+    </section>
+    <!-- /.l-timeline -->
+
+  <section class="l-sns p-sns">
+    <h2 class="p-sns__title u-uppercase u-enfont u-centerposition" lang="en">connect to sns</h2>
+    <ul class="p-sns__icons"> 
+      <li class="p-sns__icons-icon"><a href="#" target="_blank"><img src="./assets/img/twitter.svg" alt="" width="40px"></a></li>
+      <li class="p-sns__icons-icon"><a href="#" target="_blank"><img src="./assets/img/facebook.svg" alt="" width="38px"></a></li>
+      <li class="p-sns__icons-icon -note"><a href="#" target="_blank"><img src="./assets/img/note.svg" alt="" width="28px"></a></li>
+    </ul><!-- /.p-sns__icons -->
+  </section>
+  <!-- /.l-sns -->
+
+  </main>
+
+  <footer class="l-footer p-footer">
+    <div class="l-container__wide">
+      <ul class="p-footer__list">
+        <li class="p-footer__list-item"><a href="#" class="u-uppercase">top</a></li>
+        <li class="p-footer__list-item"><a href="#">SocialGoodラボとは？</a></li>
+        <li class="p-footer__list-item"><a class="c-blankLink" href="#" target="_blank" rel="noopener">運営会社</a></li>
+        <li class="p-footer__list-item"><a class="c-blankLink" href="#" target="_blank" rel="noopener">プライバシーポリシー</a></li>
+        <li class="p-footer__list-item"><a class="c-blankLink" href="#" target="_blank" rel="noopener">利用規約</a></li>
+        <li class="p-footer__list-item"><a class="c-blankLink" href="#" target="_blank" rel="noopener">お問い合わせ</a></li>
+      </ul><!-- /.p-footer__list -->
+      <div class="p-footer__copyright">
+        <p class="u-centerposition" lang="en">&copy; SG Lab</p>
+      </div><!-- /.p-footer__copyright -->
+    </div><!-- /.l-container__wide -->
+  </footer>
+
+  
+
+</body>
+</html>
