@@ -1385,7 +1385,7 @@ img {
   }
 }
 .p-mv__left {
-  flex-basis: 40%;
+  flex-basis: 50%;
 }
 @media screen and (max-width: 767px) {
   .p-mv__left {
@@ -1394,7 +1394,7 @@ img {
   }
 }
 .p-mv__right {
-  flex-basis: 60%;
+  flex-basis: 50%;
   text-align: right;
 }
 @media screen and (max-width: 767px) {
