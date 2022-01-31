@@ -3,6 +3,11 @@
         width: 100%;
         position: relative;
 
+        @include mq('sp') {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
         &-container {
             position: absolute;
             top: 0;
@@ -10,14 +15,31 @@
             left: 50%;
             transform: translateX(-50%);
 
+            @include mq('tab') {
+                width: 95%;
+            }
+
             @include mq('sp') {
                 width: 95%;
+                margin: 0 auto;
+                position: relative;
+                left: 0;
+                transform: none;
+                padding-bottom: rem(24);
             }
         }
 
         &-body {
             padding-top: rem(160);
             max-width: 440px;
+
+            @include mq('tab') {
+                padding-top: 0;
+                max-width: 40%;
+            }
+            @include mq('sp') {
+                max-width: 100%;
+            }
         }
 
     }
@@ -37,6 +59,12 @@
         max-width: 1100px;
         margin-left: auto;
         position: relative;
+
+        @include mq('sp') {
+            width: 95%;
+            margin: 0 auto;
+            order: 1;
+        }
     }
 
     &__bottomWrap {
@@ -44,12 +72,31 @@
         position: relative;
         min-height: 1100px;
 
+        @include mq('sp') {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
         &-mv {
             margin-right: auto;
             width: 50%;
             max-width: 1100px;
             position: relative;
             top: -50px;
+
+            @include mq('tab') {
+                top: 250px;
+            }
+            @include mq('sp') {
+                top: 0;
+                width: 95%;
+                margin: 0 auto;
+                position: relative;
+                left: 0;
+                transform: none;
+                padding-bottom: rem(24);
+                order: 1;
+            }
         }
 
         &-container {
@@ -59,10 +106,33 @@
             left: 50%;
             transform: translateY(-50%);
 
+            @include mq('tab') {
+                width: 95%;
+            }
+
+            @include mq('sp') {
+                position: relative;
+                top: 0;
+                left: 0;
+                transform: none;
+            }
+
             &-body {
                 position: relative;
                 width: 40%;
                 margin-left: 5%;
+
+                @include mq('tab') {
+                    margin-left: 2%;
+                    width: 45%;
+                    padding-top: rem(60);
+                    padding-bottom: rem(24);
+                }
+
+                @include mq('sp') {
+                    width: 100%;
+
+                }
             }
 
         }
