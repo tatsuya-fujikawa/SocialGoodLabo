@@ -63,6 +63,11 @@
         justify-content: space-between;
         padding-top: 10px;
 
+        @include mq('tab') {
+            width: 95%;
+            margin: 0 auto;
+        }
+
         @include mq('sp') {
             width: 93%;
             margin: 0 auto;

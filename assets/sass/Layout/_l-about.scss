@@ -4,5 +4,9 @@
 
     &__spacer {
         padding-top: rem(112);
+
+        @include mq('tab') {
+            padding-top: rem(60);
+        }
     }
 }
