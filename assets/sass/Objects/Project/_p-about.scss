@@ -1,4 +1,8 @@
 .p-about {
+
+    &__lead {
+        padding-top: 2.5rem;
+    }
     &__mvWrap {
         width: 100%;
         position: relative;
@@ -30,8 +34,8 @@
         }
 
         &-body {
-            padding-top: rem(160);
-            max-width: 440px;
+            padding-top: rem(60);
+            max-width: 470px;
 
             @include mq('tab') {
                 padding-top: 0;
@@ -60,6 +64,15 @@
         margin-left: auto;
         position: relative;
 
+        img {
+            object-fit: contain;
+            height: 1260px;
+
+            @include mq('sp') {
+                height: auto;
+            }
+        }
+
         @include mq('sp') {
             width: 95%;
             margin: 0 auto;
@@ -70,7 +83,7 @@
     &__bottomWrap {
         width: 100%;
         position: relative;
-        min-height: 1100px;
+        min-height: 860px;
 
         @include mq('sp') {
             display: flex;
@@ -84,9 +97,9 @@
             position: relative;
             top: -50px;
 
-            @include mq('tab') {
-                top: 250px;
-            }
+            // @include mq('tab') {
+            //     top: 250px;
+            // }
             @include mq('sp') {
                 top: 0;
                 width: 95%;
@@ -101,14 +114,14 @@
 
         &-container {
             position: absolute;
-            top: 40%;
-            width: 1200px;
+            top: 30%;
+            // width: 1200px;
             left: 50%;
             transform: translateY(-50%);
 
-            @include mq('tab') {
-                width: 95%;
-            }
+            // @include mq('tab') {
+            //     width: 95%;
+            // }
 
             @include mq('sp') {
                 position: relative;
@@ -119,12 +132,13 @@
 
             &-body {
                 position: relative;
-                width: 40%;
+                // width: 40%;
+                max-width: 550px;
                 margin-left: 5%;
 
                 @include mq('tab') {
                     margin-left: 2%;
-                    width: 45%;
+                    width: 95%;
                     padding-top: rem(60);
                     padding-bottom: rem(24);
                 }
