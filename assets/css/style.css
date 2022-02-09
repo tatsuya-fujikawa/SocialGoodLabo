@@ -1107,7 +1107,7 @@ img {
   }
 }
 .c-heading__title {
-  font-size: 1.4375rem;
+  font-size: 2rem;
   font-weight: bold;
   letter-spacing: 0.005em;
 }
@@ -1397,6 +1397,7 @@ img {
 .p-mv__inner {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 @media screen and (max-width: 767px) {
   .p-mv__inner {
@@ -1832,7 +1833,7 @@ img {
   }
 }
 .p-about__mvWrap-body {
-  padding-top: 3.75rem;
+  padding-top: 1.875rem;
   max-width: 470px;
 }
 @media screen and (max-width: 1200px) {
@@ -1852,7 +1853,7 @@ img {
 }
 .p-about__text {
   font-size: 1rem;
-  padding-top: 3.125rem;
+  padding-top: 2rem;
   line-height: 2.375rem;
 }
 .p-about__mv {
