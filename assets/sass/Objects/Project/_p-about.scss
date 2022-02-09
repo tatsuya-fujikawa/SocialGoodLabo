@@ -34,7 +34,7 @@
         }
 
         &-body {
-            padding-top: rem(60);
+            padding-top: rem(30);
             max-width: 470px;
 
             @include mq('tab') {
@@ -54,7 +54,7 @@
     }
     &__text {
         font-size: rem(16);
-        padding-top: rem(50);
+        padding-top: rem(32);
         line-height: rem(38);
     }
 
