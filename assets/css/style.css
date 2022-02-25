@@ -888,6 +888,9 @@ img {
 .c-article__thumbs {
   width: 480px;
   height: 300px;
+  background-color: #666B79;
+  display: flex;
+  align-items: center;
 }
 @media screen and (max-width: 767px) {
   .c-article__thumbs {
@@ -905,7 +908,7 @@ img {
 @media screen and (max-width: 767px) {
   .c-article__thumbs img {
     width: 100%;
-    height: 100%;
+    height: 240px;
   }
 }
 .c-article__lead {
@@ -967,6 +970,7 @@ img {
 }
 .c-article__flex {
   display: flex;
+  padding-bottom: 1.375rem;
 }
 
 .c-rankingItems__item img {
