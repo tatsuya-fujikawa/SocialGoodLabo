@@ -7,4 +7,46 @@
       width: 95%;
       margin: rem(40) auto 0;
   }
+
+  &__box {
+    display: flex;
+    padding: 1rem;
+    border-radius: 4px;
+    border: 1px solid #000;
+
+    @include mq('sp') {
+      display: block;
+      padding: 1rem 0.5rem;
+    }
+
+    &:first-of-type {
+      margin-bottom: rem(16);
+    }
+
+    &-img {
+      width: 240px;
+      flex-shrink: 0;
+
+      @include mq('sp') {
+        width: 100%;
+      }
+    }
+
+    &-img img {
+      display: block;
+      width: 240px;
+
+      @include mq('sp') {
+        margin: 0 auto rem(16);
+      }
+    }
+
+    &-lead {
+      padding: 0 rem(16);
+    }
+    &-title {
+      padding-bottom: rem(16);
+      font-weight: bold;
+    }
+  }
 }
