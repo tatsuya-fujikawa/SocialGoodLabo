@@ -19,8 +19,13 @@
         justify-content: space-between;
         align-items: center;
 
+        @include mq('tab') {
+            display: block;
+        }
+
         @include mq('sp') {
             flex-wrap: wrap;
+            display: flex;
         }
     }
 
@@ -35,6 +40,11 @@
     &__right {
         flex-basis: 50%;
         text-align: right;
+
+        @include mq('tab') {
+            padding-top: rem(16);
+            padding-bottom: rem(16);
+        }
 
         @include mq('sp') {
             flex-basis: 100%;
@@ -69,6 +79,12 @@
     &__button {
         @include mq('sp') {
             padding-bottom: rem(32);
+        }
+    }
+
+    &__movie {
+        video {
+            width: 100%;
         }
     }
 }
